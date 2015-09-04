@@ -1,5 +1,9 @@
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
+  
+  def welcome
+    render text: '<h1> render Hello World! </h1>'
+  end
 
   # GET /topics
   # GET /topics.json
